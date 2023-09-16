@@ -5,7 +5,7 @@ const Carts = ({ items, credit }) => {
   return (
     <div className="bg-slate-200 p-3 rounded-md mt-2">
       <div className="text-lg font-medium text-blue-600">
-        Credit Hour Remaining 2200 hrs
+        Credit Hour Remaining hrs
       </div>
       <hr />
       <div>
