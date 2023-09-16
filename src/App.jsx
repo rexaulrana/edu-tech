@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <h4 className="text-2xl font-semibold text-center mt-4 mb-4">
-        Course Registration
+        Edu Technology
       </h4>
       <Cards></Cards>
     </>

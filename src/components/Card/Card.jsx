@@ -11,11 +11,11 @@ const Card = ({ card, handleCart }) => {
   } = card;
   return (
     <div>
-      <div className="border w-64 h-96 p-3 rounded-md m-2">
+      <div className="border w-64 h-96 p-3 rounded-md">
         <img className="rounded-md" src={image} alt="" />
         <h2 className="text-xl font-medium">{course_name}</h2>
         <p className="">{course_description}</p>
-        <div>
+        <div className="flex justify-between item-center">
           <p>Price: {course_price} $</p>
           <p>Credit: {course_credit_hours}Hr</p>
         </div>

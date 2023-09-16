@@ -3,9 +3,9 @@ import React from "react";
 const Carts = ({ items, credit, totalCredit, amount }) => {
   //   console.log(items);
   return (
-    <div className="bg-slate-200 p-3 rounded-md mt-2">
+    <div className="bg-slate-200 p-3 rounded-md ml-2">
       <div className="text-lg font-medium text-blue-600">
-        Credit Hour Remaining {totalCredit} hrs
+        Credit Hour Remaining {totalCredit} hr
       </div>
       <hr />
       <div>
@@ -19,9 +19,9 @@ const Carts = ({ items, credit, totalCredit, amount }) => {
         </h5>
       </div>
       <hr />
-      <h4>Total Credit Hour:{credit} Hr</h4>
+      <h4 className="text-lg font-medium ">Total Credit Hour:{credit} hr</h4>
       <hr />
-      <h5>Total Price: {amount} USD</h5>
+      <h5 className="text-lg font-medium">Total Price: {amount} USD</h5>
     </div>
   );
 };

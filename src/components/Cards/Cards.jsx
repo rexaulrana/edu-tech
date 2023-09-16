@@ -38,8 +38,7 @@ const Cards = () => {
       const currentCredit = totalCredit - credit;
       setTotalCredit(currentCredit);
       if (currentCredit <= 0) {
-        toast("You have not enough Credit");
-        return;
+        return toast("You have not enough Credit");
       }
       {
         item.forEach(
@@ -51,8 +50,8 @@ const Cards = () => {
   };
   return (
     <div>
-      <div className="flex justify-between  ">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex justify-between item-center gap-5 ">
+        <div className="grid  gap-3 md:grid-cols-1 lg:grid-cols-3">
           {cards.map((card) => (
             <Card handleCart={handleCart} key={card.id} card={card}></Card>
           ))}
