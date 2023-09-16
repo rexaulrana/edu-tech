@@ -1,7 +1,9 @@
 # project features:
 
 1.In this website a student easily show which course is available and its all information such as course name, description,price,credits etc.
+
 2.Student can select their favourite courses until their credit is 0. Remaining credits shown at the top position.
+
 3.Student could not choose one course for twice.
 
 # how i managed the state in my assignment project:
