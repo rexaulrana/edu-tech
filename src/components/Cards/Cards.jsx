@@ -9,6 +9,7 @@ const Cards = () => {
   const [cards, setCards] = useState([]);
   const [item, setItem] = useState([]);
   const [credit, setCredit] = useState(0);
+  const [totalCredit, setTotalCredit] = useState(20);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -29,19 +30,31 @@ const Cards = () => {
       {
         item.forEach((hours) => (credit = credit + hours.course_credit_hours));
       }
+
       setCredit(credit);
+      const totalCredit = 20;
+      const currentCredit = totalCredit - credit;
+      setTotalCredit(currentCredit);
+      if (currentCredit <= 0) {
+        return toast("You have not enough Credit");
+      }
     }
   };
   return (
     <div>
-      <div className="flex justify-between ml-3 mr-3">
+      <div className="flex justify-between  ">
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => (
             <Card handleCart={handleCart} key={card.id} card={card}></Card>
           ))}
         </div>
         <div>
-          <Carts key={item.id} items={item} credit={credit}></Carts>
+          <Carts
+            key={item.id}
+            items={item}
+            credit={credit}
+            totalCredit={totalCredit}
+          ></Carts>
         </div>
       </div>
     </div>

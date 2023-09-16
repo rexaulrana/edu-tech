@@ -1,11 +1,11 @@
 import React from "react";
 
-const Carts = ({ items, credit }) => {
+const Carts = ({ items, credit, totalCredit }) => {
   //   console.log(items);
   return (
     <div className="bg-slate-200 p-3 rounded-md mt-2">
       <div className="text-lg font-medium text-blue-600">
-        Credit Hour Remaining hrs
+        Credit Hour Remaining {totalCredit} hrs
       </div>
       <hr />
       <div>
