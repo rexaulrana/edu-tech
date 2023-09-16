@@ -1,6 +1,6 @@
 import React from "react";
 
-const Carts = ({ items, credit, totalCredit }) => {
+const Carts = ({ items, credit, totalCredit, amount }) => {
   //   console.log(items);
   return (
     <div className="bg-slate-200 p-3 rounded-md mt-2">
@@ -21,7 +21,7 @@ const Carts = ({ items, credit, totalCredit }) => {
       <hr />
       <h4>Total Credit Hour:{credit} Hr</h4>
       <hr />
-      <h5>Total Price: USD</h5>
+      <h5>Total Price: {amount} USD</h5>
     </div>
   );
 };

@@ -10,6 +10,7 @@ const Cards = () => {
   const [item, setItem] = useState([]);
   const [credit, setCredit] = useState(0);
   const [totalCredit, setTotalCredit] = useState(20);
+  const [amount, setAmount] = useState(0);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -19,6 +20,7 @@ const Cards = () => {
     // only one card will show
     const isExist = item.find((name) => name.id === card.id);
     let credit = card.course_credit_hours;
+    let totalAmount = card.course_price;
     if (isExist) {
       return toast(" You have already added this course");
     } else {
@@ -32,12 +34,18 @@ const Cards = () => {
       }
 
       setCredit(credit);
-      const totalCredit = 20;
+      let totalCredit = 20;
       const currentCredit = totalCredit - credit;
       setTotalCredit(currentCredit);
       if (currentCredit <= 0) {
         return toast("You have not enough Credit");
       }
+      {
+        item.forEach(
+          (price) => (totalAmount = totalAmount + price.course_price)
+        );
+      }
+      setAmount(totalAmount);
     }
   };
   return (
@@ -54,6 +62,7 @@ const Cards = () => {
             items={item}
             credit={credit}
             totalCredit={totalCredit}
+            amount={amount}
           ></Carts>
         </div>
       </div>
