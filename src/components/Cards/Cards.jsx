@@ -26,25 +26,25 @@ const Cards = () => {
     } else {
       // course name
       const newItem = [...item, card];
-      setItem(newItem);
 
       // credit
       {
         item.forEach((hours) => (credit = credit + hours.course_credit_hours));
       }
 
-      setCredit(credit);
       let totalCredit = 20;
       const currentCredit = totalCredit - credit;
-      setTotalCredit(currentCredit);
-      if (currentCredit <= 0) {
+      if (currentCredit < 0) {
         return toast("You have not enough Credit");
       }
+      setTotalCredit(currentCredit);
       {
         item.forEach(
           (price) => (totalAmount = totalAmount + price.course_price)
         );
       }
+      setItem(newItem);
+      setCredit(credit);
       setAmount(totalAmount);
     }
   };
