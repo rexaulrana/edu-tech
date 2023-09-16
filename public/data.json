@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/F0QfxLB/Rectangle-3.png",
+    "course_name": "Data Structure Fundamentals",
+    "course_description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
+    "course_price": 200,
+    "course_credit_hours": 4
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/KNr7FNW/Rectangle-2-2.png",
+    "course_name": "C programming for Beginners",
+    "course_description": "An introduction to data science, covering data analysis and visualization.",
+    "course_price": 460,
+    "course_credit_hours": 3
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/ZSpbVpG/Rectangle-3-1.png",
+    "course_name": "Cybersecurity Essentials",
+    "course_description": "Learn the fundamentals of cybersecurity, including network security and encryption.",
+    "course_price": 320,
+    "course_credit_hours": 3
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/2P1hLL6/Rectangle-2.png",
+    "course_name": "Machine Learning Foundations by Python",
+    "course_description": "An introduction to machine learning algorithms and techniques.",
+    "course_price": 230,
+    "course_credit_hours": 4
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/DKQC743/Rectangle-2-6.png",
+    "course_name": "Mobile App Development with React Native",
+    "course_description": "Build cross-platform mobile apps using React Native and JavaScript.",
+    "course_price": 530,
+    "course_credit_hours": 4
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/tJqkT9j/Rectangle-2-3.png",
+    "course_name": "Learn basic Algorithm",
+    "course_description": "Introduction to cloud computing services and platforms.",
+    "course_price": 260,
+    "course_credit_hours": 2
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/m9nhQN2/Rectangle-2-4.png",
+    "course_name": "Learn programming by C++ ",
+    "course_description": "Explore the ethical considerations in artificial intelligence and machine learning.",
+    "course_price": 300,
+    "course_credit_hours": 3
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/VgPJzFr/swe.jpg",
+    "course_name": "Software Engineering",
+    "course_description": "Build scalable web applications with Node.js, Express, and MongoDB.",
+    "course_price": 400,
+    "course_credit_hours": 5
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/Gkg0NJz/Rectangle-2-1.png",
+    "course_name": "Learn My SQL",
+    "course_description": "Learn big data processing using Hadoop and MapReduce.",
+    "course_price": 150,
+    "course_credit_hours": 4
+  }
+]
