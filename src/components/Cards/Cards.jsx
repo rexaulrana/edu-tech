@@ -38,7 +38,8 @@ const Cards = () => {
       const currentCredit = totalCredit - credit;
       setTotalCredit(currentCredit);
       if (currentCredit <= 0) {
-        return toast("You have not enough Credit");
+        toast("You have not enough Credit");
+        return;
       }
       {
         item.forEach(
